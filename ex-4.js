@@ -82,3 +82,15 @@ let orders = [
 ];
 
 // Start coding here
+
+let total = 0;
+let mostExpensive = "";
+
+for (let i = 0; i < orders.length; i++) {
+  if (orders[i].productPrice > total) {
+    total = orders[i].productPrice;
+    mostExpensive = orders[i].productName;
+  }
+}
+
+console.log(`The most expensive product in orders: ${mostExpensive}`);
