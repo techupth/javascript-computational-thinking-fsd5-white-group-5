@@ -82,3 +82,11 @@ let orders = [
 ];
 
 // Start coding here
+
+let totalPrice = 0;
+let price = 0;
+for (let i = 0; i < orders.length; i++) {
+  price = orders[i].productPrice * orders[i].productQuantity;
+  totalPrice += price;
+}
+console.log(`Total amount of the orders: ${totalPrice} Baht`);
